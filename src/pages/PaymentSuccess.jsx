@@ -29,7 +29,7 @@ const PaymentSuccess = () => {
       try {
         console.log("🔄 Sending session_id to backend:", sessionId);
         const response = await axios.post(
-          `http://localhost:8080/api/user/verify-payment`,
+          `https://mediconnect1122.netlify.app/api/user/verify-payment`,
           { session_id: sessionId },
           { headers: { token } }
         );
